@@ -17,4 +17,11 @@
        - name: nginx 
          image: yousif101/argocdproj:v0.1.0
          ports:
-         - containerPort: 80
+         - containerPort: 80 
+         resources:
+           limits:
+             memory: "128Mi"
+             cpu: "100m"
+           requests:
+             memory: "64Mi"
+             cpu: "50m"
