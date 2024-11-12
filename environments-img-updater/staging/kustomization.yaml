@@ -1,0 +1,10 @@
+---
+namespace: staging
+replicas:
+- name: nginx-deployment
+  count: 2
+images:
+- name: yousif101/argocdproj
+  newTag: v0.1.0
+resources:
+- ../../../my-app-base-img-updater
