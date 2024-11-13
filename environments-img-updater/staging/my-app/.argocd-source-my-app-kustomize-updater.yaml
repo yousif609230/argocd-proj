@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - yousif101/argocdproj:v0.1.3
